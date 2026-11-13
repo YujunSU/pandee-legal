@@ -40,7 +40,7 @@
         </p>
         <div class="doc-meta">
           <span>Effective August 24, 2026</span>
-          <span>Last updated August 24, 2026</span>
+          <span>Last updated November 13, 2026</span>
         </div>
       </header>
 
@@ -119,6 +119,27 @@
               its service, subject to its own privacy policy.
             </p>
 
+            <h3>Anonymous product analytics and acquisition attribution</h3>
+            <p>
+              Pandee uses Firebase Analytics to measure app launches, onboarding
+              interactions, feature and paywall use, and subscription-funnel events.
+              Firebase assigns a random app-instance identifier to an installation.
+              Pandee does not send names, email addresses, learning content, or
+              free-form user text as analytics event parameters.
+            </p>
+            <p>
+              If you install Pandee after interacting with an Apple Ads campaign,
+              Apple’s AdServices framework may provide a privacy-preserving
+              attribution token. Pandee sends that token to RevenueCat, which may
+              obtain campaign, ad-group, keyword, ad, country or region, and
+              conversion-type information from Apple. We use this information to
+              understand which acquisition campaigns lead to app use, trials,
+              subscriptions, and revenue. Pandee uses the standard AdServices
+              attribution flow, does not request access to the iOS advertising
+              identifier for this purpose, and does not use this information to
+              track you across other companies’ apps or websites.
+            </p>
+
             <h3>Notifications, widgets, and speech</h3>
             <ul>
               <li>
@@ -175,6 +196,11 @@
                   <td>Process purchases, validate receipts, restore access, and understand subscription performance</td>
                 </tr>
                 <tr>
+                  <td>App-instance analytics and Apple Ads acquisition attribution</td>
+                  <td>Firebase, Apple, and RevenueCat</td>
+                  <td>Measure product funnels and understand campaign performance</td>
+                </tr>
+                <tr>
                   <td>Support email</td>
                   <td>Our email service</td>
                   <td>Respond to your request</td>
@@ -190,6 +216,8 @@
               <li>Provide and personalize the learning experience on your device.</li>
               <li>Display progress, schedule reviews, and operate app features.</li>
               <li>Process, verify, restore, and support subscriptions and purchases.</li>
+              <li>Measure app usage, onboarding, paywall, and subscription funnels.</li>
+              <li>Attribute trials, subscriptions, and revenue to Apple Ads campaigns.</li>
               <li>Prevent fraud, maintain security, and troubleshoot service issues.</li>
               <li>Respond to support, privacy, and legal requests.</li>
               <li>Comply with legal obligations and enforce our Terms of Use.</li>
@@ -207,14 +235,20 @@
             <p>We may disclose limited information to:</p>
             <ul>
               <li>
-                <strong>Apple:</strong> to distribute the app and process in-app
-                purchases. See
+                <strong>Apple:</strong> to distribute the app, process in-app
+                purchases, and provide Apple Ads attribution. See
                 <a href="https://www.apple.com/legal/privacy/">Apple’s Privacy Policy</a>.
               </li>
               <li>
                 <strong>RevenueCat:</strong> to manage offerings, receipts,
-                entitlements, subscription analytics, and purchase restoration. See
+                entitlements, subscription analytics, acquisition attribution, and
+                purchase restoration. See
                 <a href="https://www.revenuecat.com/privacy/">RevenueCat’s Privacy Policy</a>.
+              </li>
+              <li>
+                <strong>Google Firebase:</strong> to provide anonymous product and
+                funnel analytics. See
+                <a href="https://policies.google.com/privacy">Google’s Privacy Policy</a>.
               </li>
               <li>
                 <strong>GitHub:</strong> to host this public website through GitHub Pages.
@@ -248,6 +282,11 @@
                 <strong>Purchase information:</strong> is retained by Apple and
                 RevenueCat according to their policies and as required for billing,
                 security, accounting, and legal compliance.
+              </li>
+              <li>
+                <strong>Analytics and acquisition attribution:</strong> is retained
+                by Firebase, Apple, and RevenueCat according to their configured
+                retention settings and privacy policies.
               </li>
               <li>
                 <strong>Support correspondence:</strong> is retained only as long as
@@ -303,8 +342,9 @@
               completely secure, so we cannot guarantee absolute security.
             </p>
             <p>
-              Apple, RevenueCat, GitHub, and email providers may process information in
-              countries other than yours. Where required, service providers rely on
+              Apple, RevenueCat, Google Firebase, GitHub, and email providers may
+              process information in countries other than yours. Where required,
+              service providers rely on
               recognized transfer mechanisms and safeguards. Their privacy policies
               provide more information about their practices.
             </p>
